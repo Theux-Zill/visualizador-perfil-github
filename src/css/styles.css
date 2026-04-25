@@ -148,11 +148,10 @@ main {
 .profile-card {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xl);
-  padding: var(--spacing-xl);
-  width: 100%;
-  border-radius: var(--radius);
-  margin-top: var(--spacing-xl);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
 }
 
 .profile-avatar {
@@ -160,22 +159,20 @@ main {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 .profile-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-start ;
   text-align: left;
-  flex: 1;
+  gap: 0.5rem;
 }
 
 .profile-info h2 {
   font-size: var(--font-xl);
   font-weight: 700;
-  margin-bottom: var(--spacing-sm);
-  color: var(--foreground);
+  margin-bottom: 0.5rem;
 }
 
 .profile-info p {
@@ -215,4 +212,23 @@ main {
 .error-message {
   color: red;
   padding: 1rem;
+}
+
+.profile-counters {
+  display: flex;
+  gap: 32px;
+  margin: 80px 0;
+  justify-content: center;
+}
+
+.profile-counters h4 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.profile-counters span {
+  font-size: 2rem;
+  font-weight: bold;
 }
